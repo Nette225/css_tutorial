@@ -1,14 +1,203 @@
 /* Write the CSS Code for Lessons 01-04 below this comment */
+/* CSS Code to change all h1 tags to have a text color of red */
+h1 {
+    color: red;
+}
+/* CSS Code to change all elements with a class of pink to have a text color pink */
+.pink {
+    color: pink;
+}
+/* CSS Code to group the one class and two class common attributes together */
+.one, .two {
+    background-color: beige;
+    font-family: cursive;
+    padding: 5px;
+    margin: 5px;
+}
+/* Using the universal selector to globally apply font-size */
+* {
+    font-size: 32px;
+}
 
+/* Specificity inline vs id vs class */
+#first {
+    color: red;
+}
+.first {
+    color: yellow;
+}
+/* Specificity id vs class */
+#second {
+    color: brown;
+}
+.second {
+    color:azure;
+}
+/* Specificity class vs tag type */
+.third {
+    color: lime;
+}
+p {
+    color: #36454F;
+}
+/* Red Text Color with Blue Background */
+.red-blue {
+    color: red;
+    background-color: aquamarine;
+}
+/* Red Text with Green Background */
+.red-green {
+    color: #FF385C;
+    background-color: rgb(130, 233, 141);
+}
+/* Red Text using RGB */
+.red-text {
+    color: rgb(226, 112, 90);
+}
+/* Transparent red text green background */
+.transparent-red-green {
+    color: rgba(237, 30, 23, 0.667);
+    background-color: rgba(14, 104, 14, 0.472);
+}
+/* CSS Code to apply styling to element with an id of main-content */
+#main-content {
+    background-color: silver;
+    color: purple;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+}
+/* Code to set background image of the body of the HTML page */
+body {
+    background-image: url("images/background.jpg"); /* Ensure the path to your image is correct */
+}
+/* Changing line height of .line-height elements */
+.line-height {
+    line-height: 2.5;
+}
+/* Changing letter spacing og .letter-spacing elements */
+.letter-spacing {
+    letter-spacing: 5px;
+}
+/* Text transform examples, uppercase, capitalize, lowercase */
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+/* Text Decoration underline, overline, and line-through examples */
+.underline {
+    text-decoration: underline;
+}
+.overline {
+    text-decoration: overline;
+}
+.linethrough {
+    text-decoration: line-through;
+}
+/* Text Right Placement Example */
+.text-right {
+    text-align: right;
+}
+/* Text Center Placement Example */
+.text-center {
+    text-align: center;
+}
+/* Roboto Google Font Example */
+.roboto {
+    font-family: "Roboto", sans-serif, Arial;
+    font-size: 48px;
+}
+/* Raleway Google Font Example */
+.raleway {
+    font-family: "Raleway", sans-serif, Arial;
+    font-size: 36px;
+}
+
+/* Creating .box class to add background color and change the width and height of the element */
+.box {
+    width: 320px;
+    height: 320px;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+/* .padding example one liner*/
+.padding {
+    padding: 50px 10px 13px 20px; /* last instance of padding CSS gets priority because code gets read from top to bottom*/
+}
+/* .margin example 1 liner */
+.margin {
+    margin: 50px 13px 25px 78px;
+}
+
+/* .border CSS example */
+.border {
+    border: dotted rgb(30, 122, 16) 30px;
+    border-radius: 50px;
+}
+
+/* Changing the .item class to have a different background */
+.item {
+    background-color: lightgray;
+}
+/* Flex Row Example */
+.flex-row {
+    display: flex;
+    flex-direction: row; /* default value, can be omitted */
+    gap: 100px;
+}
+/* Flex Column Example */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+/* Flex Row Reverse Example */
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+}
+/* Flex Column Reverse Example */
+.flex-col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* Justify Content Example */
+.justify-content {
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: flex-end;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+}
+/* Align Items Example */
+.align-items {
+    flex-direction: column;
+    align-items: flex-end;
+    /* align-items: center; */
+    /* align-items: baseline;  */
+    /* only offsets based on text size */
+}
 /* Write the CSS Code for Lessons 01-04 above this comment */
-
 /* Edit the CSS Code for Lesson 05 below this comment */
 .app {
     background-color: rgb(137, 179, 217);
     padding: 5px;
     height: 400px;
-    width: 1600px;
+    width: 90%;
+    /* Adjusted width for mobile first methodology using percentages */
 }
+@media screen and (min-width: 800px) {
+    /* If the screen is 600px or bigger any styles within this block of code get applied */
+    .app {
+        background-color: yellow;
+        width: 700px;
+        font-size: 2rem;
+    }
 /* Edit the CSS Code for Lesson 05 above this comment */
 
 /* Pre-existing CSS for Lesson 04 DO NOT Tamper with */
